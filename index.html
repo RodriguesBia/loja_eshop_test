@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <title>Projeto - Loja Ímã</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="start">
+        <div id="buttons">
+          <p class="text-shoppe">Loja Virtual</p>
+          <button class="button-value" onclick="filterProduct('all')">Todos os produtos</button>
+          <button class="button-value" onclick="filterProduct('fem')">
+            Feminino
+          </button>
+          <button class="button-value" onclick="filterProduct('children')">
+            Infantil
+          </button>
+          <button class="button-value" onclick="filterProduct('men')">
+            Masculino
+          </button>
+
+          <button id="carrinho" class="btn btn-primary">Carrinho</button>
+        </div>
+        
+        <div class="header">
+          <div id="search-container">
+            <input
+              type="search"
+              id="inputBusc"
+              placeholder="Search"
+            />
+            <button id="search" class="btn btn-success">Search</button>
+          </div>
+        </div>
+    
+    </div>
+      <div id="products"></div>
+
+      <!-- footer -->
+
+      <footer class="bg-light text-center text-lg-start">
+
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+          <p>
+          &copy;Bianca Lima</p>
+          <a class="text-dark" href="https://mdbootstrap.com/">Projeto Ímã</a>
+        </div>
+
+      </footer>
+
+
+
+      <!-- Modal -->
+
+      <div id="modal" class="modal" tabindex="-1">
+        <div cclass="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+          <h5>Título do Modal</h5>
+          <button id="closeModal" type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+
+        <div class="modal-body" id="carModal-body">
+          <p>Modal body text goes here.</p>
+        </div>
+      </div>
+    </div>
+    </div>
+
+
+    <script src="script.js"></script>
+  </body>
+</html>
